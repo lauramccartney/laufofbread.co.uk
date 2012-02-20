@@ -28,11 +28,31 @@ img {
 /* Main Styles
 ================================================== */
 
-.nav {
+#prev, #next {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 50%;
+    margin-top: -60px;
     z-index: 999;
+    height: 60px;
+    width:  60px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+
+#next {
+    right: 30px;
+    background-image: url('../img/arrow_right.png');
+    background-position: 17px;
+}
+
+#prev {
+    left: 30px;
+    background-image: url('../img/arrow_left.png');
+    background-position: 14px;
 }
 
 .slides {
