@@ -65,9 +65,9 @@ img {
 /* BGs
 ================================================== */
 
-#tea   { background-image: url('../img/projects/tea.jpg');  }
-#girl  { background-image: url('../img/projects/girl.jpg'); }
-#seat  { background-image: url('../img/projects/seat.jpg'); }
+#portfolio-2012-02-spider-tea  { background-image: url('../img/projects/tea.jpg');  }
+#portfolio-2012-02-spider-girl { background-image: url('../img/projects/girl.jpg'); }
+#portfolio-2012-02-spider-seat { background-image: url('../img/projects/seat.jpg'); }
 
 
 
@@ -77,11 +77,26 @@ img {
 
 
 
-/* Shadow
+/* Pages
 ================================================== */
 
-.box-shadow {
-    box-shadow: -5px 0 15px 0 rgba(0, 0, 0, 0.4);
+.content {
+    position: absolute;
+    width: 200px;
+    margin-left: -100px;
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+    background: rgba(0,0,0,0.6);
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-shadow: #111 0px 1px 1px;
+}
+
+.content h1 {
+    margin-bottom: 18px;
+    color: #fff;
 }
 
 

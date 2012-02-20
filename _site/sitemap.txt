@@ -1,10 +1,13 @@
 
-http://username.github.com/archive.html
-http://username.github.com/atom.xml
-http://username.github.com/categories.html
-http://username.github.com/index.html
-http://username.github.com/pages.html
-http://username.github.com/sitemap.txt
-http://username.github.com/tags.html
+http://laufofbread.github.com/archive.html
+http://laufofbread.github.com/assets/js/portfolio.js
+http://laufofbread.github.com/atom.xml
+http://laufofbread.github.com/categories.html
+http://laufofbread.github.com/index.html
+http://laufofbread.github.com/pages.html
+http://laufofbread.github.com/sitemap.txt
+http://laufofbread.github.com/tags.html
 
-http://username.github.com/lessons/2011/12/29/jekyll-introduction
+http://laufofbread.github.com/portfolio/2012/02/spider-tea
+http://laufofbread.github.com/portfolio/2012/02/spider-seat
+http://laufofbread.github.com/portfolio/2012/02/spider-girl

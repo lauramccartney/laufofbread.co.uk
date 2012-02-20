@@ -1,17 +1,11 @@
 
 
-// Load from JSON provided by jekyll
-var project = [
-    { title: "Tea", description: "Some Tea", id: "tea"},
-    { title: "Girl", description: "A Girl", id: "girl"},
-    { title: "Seat", description: "A Seat", id: "seat"}
-]
-
 var currentSlide = 0;
 
 
 // JS for the site. Not minified so it can be used as a learning tool
 $(document).ready(function () {
+
     addFirstSlide();
 
     $(document).bind('keyup', 'left', function(){
@@ -24,7 +18,11 @@ $(document).ready(function () {
     $('#prev').click(function() {
         event.preventDefault(); 
 
-        $('#' + project[currentSlide].id)
+        if (currentSlide == 0) {
+            return;
+        }
+
+        $('#' + portfolio[currentSlide].id)
             .removeClass()
             .addClass('animated slideOut');
 
@@ -35,17 +33,20 @@ $(document).ready(function () {
     $('#next').click(function() {
         event.preventDefault();
 
-        var nextSlide = currentSlide;
-        nextSlide++;
+        var nextSlide = currentSlide + 1;
+
+        if (nextSlide == portfolio.length) {
+            return;
+        }
 
         // Only add the element if we haven't already
-        if ($('#' + project[nextSlide].id).length) {            
-            $('#' + project[nextSlide].id)
+        if ($('#' + portfolio[nextSlide].id).length) {            
+            $('#' + portfolio[nextSlide].id)
                 .removeClass()
                 .addClass('animated slideIn');
         } else {
             $('<li/>', {
-                'id': project[nextSlide].id,
+                'id': portfolio[nextSlide].id,
                 'class': 'animated slideIn',
             }).css('z-index', nextSlide + 10).prependTo('.slides');            
         }
@@ -61,13 +62,13 @@ $(document).ready(function () {
 
 
 function updateHash() {
-    window.location.hash = '#!/' + project[currentSlide].id;
+    window.location.hash = '#!/' + portfolio[currentSlide].id;
 }
 
 
 function addFirstSlide() {
     $('<li/>', {
-        'id': project[0].id
+        'id': portfolio[0].id
     }).css('z-index', 10).prependTo('.slides');            
 }
 
