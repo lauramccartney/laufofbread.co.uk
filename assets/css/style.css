@@ -88,8 +88,8 @@ img {
 
 .content {
     position: absolute;
-    width: 200px;
-    margin-left: -100px;
+    width: 440px;
+    margin-left: -220px;
     top: 20%;
     left: 50%;
     z-index: 999;
