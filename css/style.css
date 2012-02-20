@@ -65,9 +65,9 @@ img {
 /* BGs
 ================================================== */
 
-#tea   { background-image: url('/img/projects/tea.jpg');  }
-#girl  { background-image: url('/img/projects/girl.jpg'); }
-#seat  { background-image: url('/img/projects/seat.jpg'); }
+#tea   { background-image: url('../img/projects/tea.jpg');  }
+#girl  { background-image: url('../img/projects/girl.jpg'); }
+#seat  { background-image: url('../img/projects/seat.jpg'); }
 
 
 
