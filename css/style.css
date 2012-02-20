@@ -2,25 +2,21 @@
 /* Some nice defaults
 ================================================== */
 
-html {
+html, body {
     height: 100%;
-}
-
-body {
     overflow: visible;
-    background-color: #999;
-    height: 100%;
+    background: #999;
 }
 
 #wrapper {
-  overflow: hidden;
-  position: absolute;
-  margin:   0;
-  padding:  0;
-  top:      0;
-  right:    0;
-  bottom:   0;
-  left:     0;
+    overflow: scroll;
+    position: absolute;
+    margin:   0;
+    padding:  0;
+    top:      0;
+    right:    0;
+    bottom:   0;
+    left:     0;
 }
 
 img {
