@@ -30,7 +30,10 @@ $(document).ready(function () {
             $('<li/>', {
                 'id': portfolio[prevSlide].id,
                 'class': 'animated',
-            }).css('z-index', prevSlide + 10).appendTo('.slides');
+            }).css({
+                'z-index': prevSlide + 10,
+                'background-image': "url(/assets/img/projects/" + portfolio[prevSlide].hero + ")",
+            }).appendTo('.slides');
         }
 
         $('#' + portfolio[currentSlide].id)
@@ -59,7 +62,10 @@ $(document).ready(function () {
             $('<li/>', {
                 'id': portfolio[nextSlide].id,
                 'class': 'animated slideIn',
-            }).css('z-index', nextSlide + 10).prependTo('.slides');            
+            }).css({
+                'z-index': nextSlide + 10,
+                'background-image': "url(/assets/img/projects/" + portfolio[nextSlide].hero + ")",
+            }).prependTo('.slides');            
         }
 
         currentSlide = nextSlide;
@@ -84,6 +90,9 @@ function updateHash() {
 
 function addFirstSlide() {
     $('<li/>', {
-        'id': portfolio[currentSlide].id
-    }).css('z-index', currentSlide + 10).prependTo('.slides');            
+        'id': portfolio[currentSlide].id,
+    }).css({
+        'z-index': currentSlide + 10,
+        'background-image': "url(/assets/img/projects/" + portfolio[currentSlide].hero + ")",
+    }).prependTo('.slides');                    
 }

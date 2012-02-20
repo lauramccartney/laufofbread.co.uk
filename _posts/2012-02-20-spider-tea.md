@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Spider Tea"
 category: portfolio
-tags: []
+hero: "tea.jpg"
 ---
 {% include JB/setup %}
