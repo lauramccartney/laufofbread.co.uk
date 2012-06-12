@@ -1,0 +1,87 @@
+/*
+    CSS3 Animations inspired by animate.css
+    http://daneden.me/animate/
+*/
+
+
+.animated {
+	-webkit-animation: 0.6s ease;
+	   -moz-animation: 0.6s ease;
+	    -ms-animation: 0.6s ease;
+	     -o-animation: 0.6s ease;
+	        animation: 0.6s ease;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	    -ms-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes slideIn {
+	0%   { -webkit-transform: translateX(100%); }
+	100% { -webkit-transform: translateX(0); }
+}
+
+@-moz-keyframes slideIn {
+	0%   { -moz-transform: translateX(100%); }
+	100% { -moz-transform: translateX(0); }
+}
+
+@-ms-keyframes slideIn {
+	0%   { -ms-transform: translateX(100%); }
+	100% { -ms-transform: translateX(0); }
+}
+
+@-o-keyframes slideIn {
+	0%   { -o-transform: translateX(100%); }
+	100% { -o-transform: translateX(0); }
+}
+
+@keyframes slideIn {
+	0%   { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+
+.slideIn {
+	-webkit-animation-name: slideIn;
+	   -moz-animation-name: slideIn;
+	    -ms-animation-name: slideIn;
+	     -o-animation-name: slideIn;
+	        animation-name: slideIn;
+}
+
+
+
+@-webkit-keyframes slideOut {
+	0%   { -webkit-transform: translateX(0); }
+	100% { -webkit-transform: translateX(100%); }
+}
+
+@-moz-keyframes slideOut {
+	0%   { -moz-transform: translateX(0); }
+	100% { -moz-transform: translateX(100%); }
+}
+
+@-ms-keyframes slideOut {
+	0%   { -ms-transform: translateX(0); }
+	100% { -ms-transform: translateX(100%); }
+}
+
+@-o-keyframes slideOut {
+	0%   { -o-transform: translateX(0); }
+	100% { -o-transform: translateX(100%); }
+}
+
+@keyframes slideOut {
+	0%   { transform: translateX(0); }
+	100% { transform: translateX(100%); }
+}
+
+.slideOut {
+	-webkit-animation-name: slideOut;
+	   -moz-animation-name: slideOut;
+	    -ms-animation-name: slideOut;
+	     -o-animation-name: slideOut;
+	        animation-name: slideOut;
+}
