@@ -1,0 +1,128 @@
+
+/* Some nice defaults
+================================================== */
+
+html, body {
+    height: 100%;
+    overflow: visible;
+    background: #999;
+}
+
+#wrapper {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    margin:   0;
+    padding:  0;
+    top:      0;
+    right:    0;
+    bottom:   0;
+    left:     0;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+
+/* Main Styles
+================================================== */
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    z-index: 999;
+    height: 60px;
+    width:  60px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+
+#next {
+    right: 30px;
+    background-image: url('../img/arrow_right.png');
+    background-position: 17px;
+}
+
+#prev {
+    left: 30px;
+    background-image: url('../img/arrow_left.png');
+    background-position: 14px;
+}
+
+.slides {
+    margin:     0;
+    list-style: none;
+    display:    block;
+    width:      100%;
+    height:     100%;
+    clear:      both;
+}
+
+.slides li {
+    position: absolute;
+    display: block;
+    width:  100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat:   no-repeat;
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+
+
+
+
+
+/* Pages
+================================================== */
+
+.content {
+    position: absolute;
+    width: 440px;
+    margin-left: -220px;
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+    background: rgba(0,0,0,0.6);
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-shadow: #111 0px 1px 1px;
+}
+
+.content h1 {
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+
+
+
+
+/* Micro Clearfix
+   http://nicolasgallagher.com/micro-clearfix-hack/
+================================================== */
+
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+
+
