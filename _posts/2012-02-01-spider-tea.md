@@ -1,6 +1,6 @@
 ---
 title: "Spider Tea"
 category: portfolio
-hero: "tea.jpg"
+hero: "spider_tea.jpg"
 ---
 {% include JB/setup %}

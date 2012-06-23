@@ -1,6 +1,6 @@
 ---
 title: "Spider Busker"
 category: portfolio
-hero: "05_busker.jpg"
+hero: "spider_busker.jpg"
 ---
 {% include JB/setup %}
