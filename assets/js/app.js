@@ -22,6 +22,9 @@ $(function() {
             $(this).attr('src', $(this).data('thumbnail')); 
         });
 
+        // Clear out any positional indicators
+        $('.arrow').remove();
+
         // If we've clicked on the focused image, go back to the main layout
         if ($(this).hasClass('focused')) {
             $(this).parent('ul')
@@ -37,6 +40,9 @@ $(function() {
                    .addClass('focused')
                    .removeClass('unfocused')
                    .attr('src', $(this).children('img').data('fullsize'));             
+
+
+            $(this).after('<li class="arrow"></li>');
 
             // Make sure we are the in the gallery mode
             $(this).parent('ul')

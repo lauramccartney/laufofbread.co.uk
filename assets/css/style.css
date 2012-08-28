@@ -118,6 +118,11 @@ li img {
 }
 
 
+.gallery li.arrow {
+    background: #ddd url('../img/arrow.png');
+}
+
+
 
 
 /* Fancy Selection Colours
