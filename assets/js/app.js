@@ -11,7 +11,6 @@ $(function() {
             $('.images li').removeClass('focused unfocused');
         } else {
             $('.images li').removeClass('focused').addClass('unfocused');
-;
 
             ul.removeClass('blocks').addClass('gallery');
 
