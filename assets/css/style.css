@@ -91,7 +91,7 @@ li img {
 
 .gallery li.unfocused {
     color:  #888;
-    padding: 9px 9px 9px 10px;
+    padding: 9px;
     font-size: 16px;
     line-height: 1.125em;
     font-weight: bold;
@@ -105,7 +105,7 @@ li img {
 
 .gallery li.focused {
     color:  #888;
-    padding: 35px 35px 35px 40px;
+    padding: 35px;
     font-size: 80px;
     line-height: 1.125em;
     font-weight: bold;
