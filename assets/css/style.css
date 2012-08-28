@@ -31,14 +31,14 @@ h1 {
     margin:  0 auto;
 }
 
-.blocks > li {
+.blocks li,
+.gallery li {
     float:      left;
-    width:      240px;
-    height:     240px;
     margin:     10px;
     background: #fff;
     overflow:   hidden;
     list-style: none;
+    display:    block;
 
     -webkit-border-radius: 2px;
        -moz-border-radius: 2px;
@@ -48,6 +48,39 @@ h1 {
        -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
             box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
+
+.blocks li {
+    width:      240px;
+    height:     240px;
+}
+
+.gallery li.focused {
+    position:   fixed;
+    top:        20px;
+    right:      150px;
+    bottom:     20px;
+    left:       20px;
+    text-align: center;
+}
+
+.gallery li.focused img {
+    position:   absolute;
+    top:        0;
+    right:      0;
+    bottom:     0;
+    left:       0;
+    margin:     auto;
+    max-height: 100%;
+    max-width:  100%;
+}
+
+.gallery li.unfocused {
+    width:  110px;
+    height: 110px;
+    float:  right;
+    clear:  both;
+}
+
 
 
 /* Fancy Selection Colours
@@ -63,29 +96,4 @@ h1 {
     background: #ff8800;
     color: #fff;
     text-shadow: none;
-}
-
-
-
-/* Media Queries - for different screen sizes
-================================================== */
-
-/* Teeny tiny screens - one column. */
-@media screen and (min-width:300px) {
-    .blocks { width: 260px;  }
-}
-
-/* iPhone in portrait - two columns. */
-@media screen and (min-width:560px) {
-    .blocks { width: 520px; }
-}
-
-/* iPads and iPhones in landscape - three columns */
-@media screen and (min-width:820px) {
-    .blocks { width: 780px; }
-}
-
-/* Normal laptop screens and above - left aligned */
-@media screen and (min-width:1080px) {
-    .blocks { width: 100%; }
 }
