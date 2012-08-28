@@ -39,7 +39,8 @@ h1 {
     overflow:   hidden;
     list-style: none;
     display:    block;
-    position: relative;
+    position:   relative;
+    cursor:     pointer;
 
     -webkit-border-radius: 2px;
        -moz-border-radius: 2px;
@@ -89,13 +90,9 @@ li img {
 ================================================== */
 
 ::-moz-selection {
-    background: #ff8800;
-    color: #fff;
-    text-shadow: none;
+    background: transparent;
 }
 
 ::selection {
-    background: #ff8800;
-    color: #fff;
-    text-shadow: none;
+    background: transparent;
 }
