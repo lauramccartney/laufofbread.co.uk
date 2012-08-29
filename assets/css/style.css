@@ -3,7 +3,9 @@
 
 
 body {
-    background: #ffa335 url('../img/bg.png');
+    background-color: #ffa335 ;
+    background-image: url('../img/bg.png');
+    background-attachment: fixed;
     padding:    20px 20px 10px 20px;
 }
 
@@ -115,11 +117,6 @@ li img {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-}
-
-
-.gallery li.arrow {
-    background: #ddd url('../img/arrow.png');
 }
 
 
