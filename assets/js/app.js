@@ -27,14 +27,6 @@ $(function() {
     key('escape', 'gallery', function(){
         $('.images li.focused').click();
     });
-    
-    
-    // If the images are there, swap them out for their retina counterparts
-    $('img').retina({
-        checkIfImageExists: true,
-        suffix: "@2x"
-    });
-
 
     // Add the thumbnail attributes to all images before we go anywhere
     $('.images img').each(function() {
