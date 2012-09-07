@@ -1,39 +1,32 @@
-/* General Stuff
+/* Laura McCartney's wonderful CSS
 ================================================== */
 
 
+/* The main body of the document */
 body {
     background-color: #ffa335 ;
     background-image: url('../img/bg.png');
     background-attachment: fixed;
-    padding:    20px 20px 10px 20px;
+    padding: 20px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
+/* Every blocky white square thing */
+div.boxy,
+.boxy li {
+    color:          #999;
+    background:     #fff;
+    line-height:    1.125em; /* The closest thing to leading CSS has */
+    display:        block;
+    cursor:         pointer;
+    overflow:       hidden;
+    font-weight:    bold;
+    text-rendering: optimizeLegibility; /* Properly kerns letters */
 
-/* Default structure (when site initially loads)
-================================================== */
-
-
-
-/* Gallery structure (when viewing an image)
-================================================== */
-
-.blocks {
-    padding: 0;
-    margin:  0 auto 10px auto;
-}
-
-.blocks li,
-.gallery li {
-    float:      left;
-    margin:     10px;
-    background: #fff;
-    overflow:   hidden;
-    list-style: none;
-    display:    block;
-    position:   relative;
-    cursor:     pointer;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 
     -webkit-border-radius: 2px;
        -moz-border-radius: 2px;
@@ -44,29 +37,15 @@ body {
             box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
-.blocks li {
-    width:      240px;
-    height:     240px;
-}
 
-.gallery li.focused {
-    position:   fixed;
-    top:        20px;
-    right:      150px;
-    bottom:     20px;
-    left:       20px;
-    text-align: center;
-}
-
-.gallery li.unfocused {
-    width:  110px;
-    height: 110px;
-    float:  right;
-    clear:  both;
+/* The box every single small thumbnail is inside */
+.boxy li {
+    position: relative;
 }
 
 
-li img {
+/* All images inside every box - Make them the full size of the box */
+.boxy img {
     position:   absolute;
     top:        0;
     right:      0;
@@ -78,57 +57,54 @@ li img {
 }
 
 
-.blocks li {
-    color:  #999;
-    padding: 10px 10px 10px 13px;
-    font-size: 39px;
-    line-height: 1.125em;
-    font-weight: bold;
+/* The container for the boxes in the main grid view */
+.grid {
+    margin: 0;
+}
+
+
+/* Each individual box in the main grid view */
+.grid li {
+    float:     left;
+    width:     240px;
+    height:    240px;
+    margin:     10px;
+    padding:    10px 10px 10px 13px;
+    font-size:  39px;
     letter-spacing: -1px;
-    text-rendering: optimizeLegibility;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-.gallery li.unfocused {
-    color:  #888;
-    padding: 9px;
-    font-size: 16px;
-    line-height: 1.125em;
-    font-weight: bold;
-    letter-spacing: 0;
-    text-rendering: optimizeLegibility;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
 }
 
 
-.gallery li.focused {
-    color:  #888;
-    padding: 35px;
-    font-size: 80px;
-    line-height: 1.125em;
-    font-weight: bold;
-    letter-spacing: -1px;
-    text-align: left;
-    text-rendering: optimizeLegibility;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+/* The container for the boxes in the right-side navigation */
+.navigation {
+    float:  right;
+    width:  110px;
+    margin:  10px 10px 20px 0;
 }
 
 
-
-
-/* Fancy Selection Colours
-================================================== */
-
-::-moz-selection {
-    background: transparent;
+/* Each indiviual box in the right-side navigation */
+.navigation li {
+    width:     110px;
+    height:    110px;
+    font-size:  16px;
+    padding:     9px;
+    margin:     0 0 10px 0;
 }
 
-::selection {
-    background: transparent;
+
+/* The full size lightbox when viewing an image */
+.lightbox {
+    text-align: center;
+    position:   fixed;
+    top:         30px;
+    right:      150px;
+    bottom:      30px;
+    left:        30px;
 }
+
+
+/* hides the selection color when you try to select text */
+::-moz-selection { background: transparent; }
+::selection      { background: transparent; }
+
