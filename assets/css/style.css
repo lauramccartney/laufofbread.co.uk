@@ -1,128 +1,173 @@
-
-/* Some nice defaults
+/* Laura McCartney's Wonderful CSS
 ================================================== */
 
-html, body {
-    height: 100%;
-    overflow: visible;
-    background: #999;
-}
 
-#wrapper {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    position: absolute;
-    margin:   0;
-    padding:  0;
-    top:      0;
-    right:    0;
-    bottom:   0;
-    left:     0;
-}
-
-img {
-    -ms-interpolation-mode: bicubic;
-}
-
-
-/* Main Styles
-================================================== */
-
-#prev, #next {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    z-index: 999;
-    height: 60px;
-    width:  60px;
-    border-radius: 30px;
-    background-color: rgba(0,0,0,0.4);
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-}
-
-
-#next {
-    right: 30px;
-    background-image: url('../img/arrow_right.png');
-    background-position: 17px;
-}
-
-#prev {
-    left: 30px;
-    background-image: url('../img/arrow_left.png');
-    background-position: 14px;
-}
-
-.slides {
-    margin:     0;
-    list-style: none;
-    display:    block;
-    width:      100%;
-    height:     100%;
-    clear:      both;
-}
-
-.slides li {
-    position: absolute;
-    display: block;
-    width:  100%;
-    height: 100%;
-    background-position: center center;
-    background-repeat:   no-repeat;
-
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-}
-
-
-
-
-
-
-/* Pages
-================================================== */
-
-.content {
-    position: absolute;
-    width: 440px;
-    margin-left: -220px;
-    top: 20%;
-    left: 50%;
-    z-index: 999;
-    background: rgba(0,0,0,0.6);
-    display: block;
-    color: #fff;
+/* The main body of the document */
+body {
+    background-color: #ffa335 ;
+    background-image: url('../img/bg.png');
+    background-attachment: fixed;
     padding: 20px;
-    text-shadow: #111 0px 1px 1px;
-}
-
-.content h1 {
-    margin-bottom: 18px;
-    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
+/* Every blocky white square thing */
+div.boxy, .boxy li {
+    color:          #888;
+    background:     #fff;
+    display:        block;
+    cursor:         pointer;
+    overflow:       hidden;
+    text-rendering: optimizeLegibility; /* Properly kerns letters */
 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
 
-/* Micro Clearfix
-   http://nicolasgallagher.com/micro-clearfix-hack/
-================================================== */
-
-
-/* For modern browsers */
-.cf:before,
-.cf:after {
-    content:"";
-    display:table;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
-.cf:after { clear: both; }
-.cf { zoom: 1; }
+
+/* The box every single small thumbnail is inside */
+.boxy li {
+    position: relative;
+}
 
 
+/* The thumbnail of the image that is currently visible in the lightbox */
+.boxy li.selected {
+    -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,1);
+       -moz-box-shadow: 0px 0px 10px rgba(255,255,255,1);
+            box-shadow: 0px 0px 10px rgba(255,255,255,1);
+}
 
+
+/* All images inside every box - Make them the full size of the box and centered */
+.boxy img {
+    position:   absolute;
+    top:        0;
+    right:      0;
+    bottom:     0;
+    left:       0;
+    margin:     auto;
+    max-height: 100%;
+    max-width:  100%;
+}
+
+
+/* The container for the boxes in the main grid view */
+.grid {
+    margin: 0;
+}
+
+
+/* Each individual box in the main grid view */
+.grid li {
+    float:     left;
+    width:     240px;
+    height:    240px;
+    margin:    10px;
+    padding:   10px 10px 10px 13px;
+    letter-spacing: -1px;
+}
+
+
+/* The title text on the main grid view */
+.grid h1 {
+    padding:     0;
+    margin:      0 0 22px 0;
+    font-size:   39px;
+    line-height: 44px;
+}
+
+
+/* Any descriptive text in a block on the main grid view */
+.grid p {
+    font-weight:    normal;
+    letter-spacing: 0;
+    font-size:      14px;
+    line-height:    18px;
+}
+
+
+/* The container for the boxes in the right-side navigation */
+.navigation {
+    float:  right;
+    width:  110px;
+    margin:  10px 10px 20px 0;
+}
+
+
+/* Each indiviual box in the right-side navigation */
+.navigation li {
+    width:     110px;
+    height:    110px;
+    padding:     9px;
+    margin:     0 0 10px 0;
+}
+
+
+/* Title text in the right-hand side navigation */
+.navigation h1 {
+    margin: 0;
+    padding: 0;
+    font-size:  16px;
+    line-height: 19px;
+    color: #999;
+}
+
+
+/* Descriptive text in the right-hand side navigation - Hidden */
+.navigation p {
+    display: none;
+}
+
+
+/* The full size lightbox when viewing an image */
+.lightbox {
+    text-align: center;
+    position:   fixed;
+    top:         30px;
+    right:      150px;
+    bottom:      30px;
+    left:        30px;
+}
+
+
+/* Title text in the lightbox */
+.lightbox h1 {
+    padding: 20px 35px 35px 30px;
+    text-align: left;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+
+/* Descriptive text in the lightbox */
+.lightbox p {
+    text-align: left;
+    padding: 0 35px 0 35px;
+    margin: 0;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 44px;
+}
+
+
+/* hides the selection color when you try to select text */
+::-moz-selection { background: transparent; }
+::selection      { background: transparent; }
+
+
+/* Class that makes things disappear */
+.hidden {
+    display:    none   !important;
+    visibility: hidden !important;
+}
