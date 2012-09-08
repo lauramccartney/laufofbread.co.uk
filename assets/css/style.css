@@ -140,21 +140,24 @@ div.boxy, .boxy li {
     left:        30px;
 }
 
+
 /* Title text in the lightbox */
 .lightbox h1 {
-    padding: 20px 35px 0 35px;
+    padding: 20px 35px 35px 30px;
     text-align: left;
     font-size: 80px;
     line-height: 90px;
 }
 
+
 /* Descriptive text in the lightbox */
 .lightbox p {
     text-align: left;
-    padding: 35px;
+    padding: 0 0 0 35px;
+    margin: 0;
     font-weight: 200;
     font-size: 22px;
-    line-height: 1.5em;
+    line-height: 44px;
 }
 
 
