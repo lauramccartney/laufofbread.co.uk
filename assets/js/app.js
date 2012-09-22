@@ -63,13 +63,14 @@ function addToLightbox(box) {
         // Now create a new img tag with the fullsize image, and add it to content
         content = $('<img/>').attr('src', fullImage);
 
+ 		$('.lightbox').html(content).removeClass('hidden').removeClass('textbox');
     } else {
         // It's just a text box, so add all it's content to the lightbox
         content = $(box).html();
+
+ 		$('.lightbox').html(content).removeClass('hidden').addClass('textbox');
     }
 
-    // Put the content into the lightbox, and show it
-    $('.lightbox').html(content).removeClass('hidden');
 }
 
 
