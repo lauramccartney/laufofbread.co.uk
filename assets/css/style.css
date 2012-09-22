@@ -172,23 +172,25 @@ div.boxy, .boxy li {
 
 /* Title text in the lightbox */
 .lightbox h1 {
-    padding: 20px 35px 35px 30px;
-    text-align: left;
-    font-size: 80px;
-    line-height: 90px;
+	color:			#666;
+	text-shadow:	none;
+    padding: 		20px 35px 35px 30px;
+    text-align: 	left;
+    font-size: 		80px;
+    line-height: 	90px;
 }
 
 
 /* Descriptive text in the lightbox */
 .lightbox p {
-	color:			#fff;
-    text-align: left;
-	text-shadow: 	1px 1px 0px rgba(0,0,0,0.4);
-    padding: 0 35px 0 35px;
-    margin: 0;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 44px;
+	color:			#666;
+    text-align: 	left;
+	text-shadow: 	none;
+    padding: 		0 35px 0 35px;
+    margin: 		0;
+    font-weight: 	200;
+    font-size: 		22px;
+    line-height: 	44px;
 }
 
 
