@@ -48,8 +48,8 @@ div.boxy, .boxy li {
 
 
 /* Style for any box that has text in it */
-div.boxy.textbox, .boxy li.textbox {
-	background: none;
+.boxy li.textbox {
+	background:	none;
 	-webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
