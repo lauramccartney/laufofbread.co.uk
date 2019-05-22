@@ -1,4 +1,4 @@
-Laura McCartney's Website
-=========================
+A Travel Photo Journal
+======================
 
-This is the GitHub repo for [Laura McCartney's website](http://lauramccartney.co.uk)
+This is the GitHub repo for [Laura McCartney's travel photo journal](https://laufofbread.co.uk/)
